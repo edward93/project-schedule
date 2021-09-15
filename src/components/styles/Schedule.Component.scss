@@ -1,0 +1,83 @@
+.schedule-component-content {
+  display: flex;
+  flex-direction: column;
+  & .schedule-component-header {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  & .my-schedule-info {
+    border-bottom: 1pt solid white;
+    padding-bottom: 10pt;
+    display: flex;
+    & > .start-day,
+    & > .end-day {
+      padding: 0 2pt;
+      display: flex;
+      & > .start-day-label,
+      & > .end-day-label {
+        padding-right: 5pt;
+        font-weight: 600;
+      }
+    }
+
+    & .schedule-info-item {
+      display: flex;
+      padding: 0 5pt;
+      justify-content: center;
+      align-items: center;
+    }
+
+    & .time-available {
+      display: flex;
+      & > .time-available-label {
+        padding-right: 5pt;
+        font-weight: 600;
+      }
+    }
+
+    & > .tasks-available {
+      & > .tasks-available-label {
+        padding-right: 5pt;
+        font-weight: 600;
+      }
+    }
+  }
+
+  & > .todo-item-container {
+    display: flex;
+    flex-direction: column;
+
+    & > .to-do-item-content {
+      // display: flex;
+    }
+
+    & > .add-todo-item-header {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    & > .to-do-item-content {
+      & .to-do-item-label {
+        font-weight: 600;
+        margin-bottom: 2pt;
+      }
+      input {
+        width: 150pt;
+        border-width: 1pt;
+        padding: 2pt;
+        height: 20pt;
+      }
+      select {
+        width: 155pt !important;
+        border-width: 1pt;
+        padding: 2pt;
+        height: 25pt;
+      }
+    }
+  }
+}
